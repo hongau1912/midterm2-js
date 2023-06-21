@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="for-card.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="logo" style="border-bottom: 1px solid black; padding: 40px 0px; display: flex; justify-content: center;">
+        <a href="">
+            <img style="width: 150px; " src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png" alt="">
+        </a>
+    </div>
+    <div class="main-content">
+        <div class="board">
+            <form class="form-choose">
+                <input type="button" value="Football" id="btn1" class="btncss">
+                <input type="button" value="Lifestyle" id="btn2" class="btncss">
+            </form>
+            <div id="shoe-football" class="item-list">
+                
+            </div>
+            <div id="shoe-lifestyle" class="item-list">
+        
+            </div>
+        </div>
+        <div class="order">
+            <form class="order-form">
+                <h4>Quản lý sản phẩm</h4>
+                <div>
+                    <label>Tên sản phẩm</label>
+                    <br>
+                    <input id="txtName" type="text" class="order-in">
+                </div>
+                <div>
+                    <label>Giá</label>
+                    <br>
+                    <input id="txtPrice" type="text" class="order-in">
+                </div>
+                <div>
+                    <label>Loại sản phẩm</label>
+                    <br>
+                    <select id="cmbType" class="order-in">
+                    <option value="1">Football</option>
+                    <option value="0">Lifestyle</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Hình ảnh</label>
+                    <div style="margin-top: 0px; text-align: center; background-color: #2A7BFF; padding: 20px 0px; color: #fff; border-radius: 10px;">
+                        <span>Chọn hình ảnh</span>
+                        <br>
+                        <input id="txtImg" type="file" accept="image/*">
+                    </div>
+                </div>
+                <div class="cnsp">
+                    <input onclick="themSanPham()" type="button" value="Thêm sản phẩm" style="background-color: #2A7BFF;">
+                    <input onclick="luuCapNhat()" type="button" value="Cập nhật" style="background-color: #FDC109;">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end main-content -->
+         <div class ="footer">
+            <div class="footer--logo">
+                <img src="assets/image/newbalance.png" alt="">
+                <img src="assets/image/nike.png" alt="">
+                <img src="assets/image/adidas.jpg" alt="">
+                <img src="assets/image/asics1.png" alt="">
+                <img src="assets/image/skearches.webp" alt="">
+            </div>
+            <div class="footer-infor">
+                <div class="footer-infor1">
+                    <ul class="footer-infor_list1">
+                        <li><img style="width: 100px;" src="assets/image/newbalance.png" alt=""></li>
+                        <li>70/3B Phan Thanh</li>
+                        <li>+84934888901</li>
+                        <li>Email: nguyenvanhongau1912@gmail.com</li>
+                        <li>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-infor2">
+                    <ul class="footer-infor_list2">
+                        <li>Information</li>
+                        <li>About Us</li>
+                        <li>Checkout</li>
+                        <li>Contact</li>
+                        <li>Serivius</li>
+                    </ul>
+                </div>
+                <div class="footer-infor3">
+                    <ul class="footer-infor_list3">
+                        <li>My Account</li>
+                        <li>My Account</li>
+                        <li>Contact</li>
+                        <li>Shoping Cart</li>
+                        <li>Shop</li>
+                    </ul>
+                </div>
+                <div class="footer-infor4">
+                    <ul class="footer-infor_list4">
+                        <li>Join Our Newsleeter Now</li>
+                        <li>Get E-mail update about our laster shop and special offers</li>
+                        <div class="subscirbe">
+                            <li><input type="text" placeholder="Enter your Email"></li>
+                             <button style="background-color: #b90620; border: none; color: #fff;"> SUBSCIRBE</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-name">
+                <ul class="footer-name_list">
+                    <li style="color: #fff;">Coppyright <i class="fa-regular fa-registered"></i>2023 All rights reserved | This template is made with <i style="color: #b90620;" class="bi bi-heart"></i> by Nguyen Van Hong Au</li>
+                    <li class="footer-name_item">
+                        <img src="assets/image/skrill.jpeg" alt="">
+                        <img src="assets/image/bitcoin.png" alt="">
+                        <img src="assets/image/american.png" alt="">
+                        <img src="assets/image/paypal.jpeg" alt="">
+                        <img src="assets/image/mastercard.png" alt="">
+                        <img src="assets/image/visa.jpeg" alt="">
+                    </li>
+                </ul>
+            </div>
+         </div>
+       <!-- end footer done  -->
+</body>
+<script src="for-card.js"></script>
+</html>
